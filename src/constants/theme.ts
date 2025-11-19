@@ -49,3 +49,41 @@ interface Sizes {
     full: number;
     };
 }
+
+interface Fonts {
+    regular: string;
+    medium: string;
+    semiBold: string;
+    bold: string;
+}
+
+export const FONTS: Fonts = {
+    regular:'System',
+    medium:'System',
+    semiBold:'System-SemiBold',
+    bold:'System-Bold', 
+}
+
+export const SHADOWS = {
+    small:{
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.1,
+        shadowRadius: 3,
+        elevation: 2,
+    },
+    medium:{
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 4 },
+        shadowOpacity: 0.1,
+        shadowRadius: 6,
+        elevation: 4,
+    },
+    large:{
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 8 },
+        shadowOpacity: 0.2,
+        shadowRadius: 12,
+        elevation: 8,
+    }
+}
